@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -133,4 +132,95 @@ table {
 html,
 body {
   height: 100%;
+}
+@font-face {
+  font-family: 'Girassol';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9N.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
+}
+* {
+  border: 1px dotted grey ;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 5% auto;
+}
+h1,
+h2,
+h3 {
+  color: cyan;
+  font-family: 'Girassol', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+body {
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('../Images/Matrix.jpg');
+  background-size: 100%;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+header h1 {
+  padding: 2% 0;
+}
+header h2 {
+  padding: 2% 0;
+}
+header nav {
+  padding: 2% 0;
+}
+header nav a {
+  padding: 0 3%;
+  text-decoration: none;
+  border-left: 3px solid cyan;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  line-height: 1.25;
+}
+.page .one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.page .two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5% 0;
 }
