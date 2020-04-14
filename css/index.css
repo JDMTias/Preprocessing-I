@@ -85,6 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -147,9 +148,6 @@ body {
   font-display: swap;
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
 }
-* {
-  border: 1px dotted grey ;
-}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -157,8 +155,7 @@ html {
   padding: 5% auto;
 }
 h1,
-h2,
-h3 {
+h2 {
   color: cyan;
   font-family: 'Girassol', cursive;
 }
@@ -170,6 +167,7 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+  color: #00BFFF;
 }
 body {
   font-size: 1.5rem;
@@ -184,9 +182,7 @@ header {
   justify-content: space-around;
   text-align: center;
 }
-header h1 {
-  padding: 2% 0;
-}
+header h1,
 header h2 {
   padding: 2% 0;
 }
@@ -197,6 +193,21 @@ header nav a {
   padding: 0 3%;
   text-decoration: none;
   border-left: 3px solid cyan;
+}
+header nav a:hover {
+  color: white;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  header nav a {
+    padding: 2% 0;
+    border: none;
+  }
 }
 .page {
   display: flex;
@@ -217,10 +228,35 @@ header nav a {
   justify-content: space-evenly;
   text-align: left;
 }
+@media (max-width: 500px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .page .one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .page .two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   padding: 5% 0;
+}
+footer a:hover {
+  color: white;
 }
