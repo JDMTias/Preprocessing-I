@@ -57,3 +57,147 @@ html, body {
     height: 100%;
 }
 
+
+// Project start, variables and Mix ins
+
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Ubuntu&display=swap');
+
+// Variables
+
+@prftcolor: cyan;
+@scftcolor:white;
+@titlefont: 'Girassol', cursive;
+@pfont: 'Ubuntu', sans-serif;
+
+//Mixins
+
+.Center(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.border(){
+	border-left: 3px solid cyan;
+}
+
+.left(){
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: left;
+
+}
+// General Rules
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; 
+	margin: 0 auto;
+	padding: 5% auto;
+  }
+
+
+  h1, h2 {
+	  color:@prftcolor;
+	  font-family: @titlefont;
+  }
+  
+  h1{
+	font-size:4rem;
+  }
+
+  h2{
+	font-size:3rem;
+  }
+
+  h3{
+	font-size:2.0rem;
+	color:#00BFFF;
+  }
+
+  body{
+	font-size: 1.5rem;
+	font-family: @pfont;
+	background-image: url('../Images/Matrix.jpg');
+	background-size: 100%;
+	color: @scftcolor;
+  }
+
+//  Detailed Styling
+
+header{
+	.Center();
+	
+	h1, h2{
+		padding: 2% 0;
+	}
+	nav{
+		padding: 2% 0;
+		a {
+			padding: 0 3%;
+			text-decoration: none;
+			.border();
+			&:hover{
+				color: white;
+			}
+			
+		
+		}
+		
+		@media (max-width:500px){
+			.Center();
+			a{
+				padding: 2% 0;
+				border: none;
+			}
+
+		}
+
+		}
+		
+	}
+
+
+.page {
+	display: flex;
+	justify-content:center;
+	line-height: 1.25;
+	.one{
+		width: 50%;
+		.left();
+		
+		
+	}
+	
+	.two{
+		width: 50%;
+		.left();
+	}
+	
+	@media (max-width:500px){
+		.Center();
+		.one{
+			width: 100%;
+			.Center();
+		}
+		.two{
+			width: 100%;
+			.Center();
+		}
+
+	}
+	
+	}
+
+footer{
+	.Center();
+	padding: 5% 0;
+	a{
+		&:hover{
+			color: white;
+		}
+	}
+}
+

@@ -1,1 +1,262 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Girassol';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Girassol Regular'), local('Girassol-Regular'), url(https://fonts.gstatic.com/s/girassol/v1/JTUUjIo_-DK48laaNC9N.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgo6eA.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 5% auto;
+}
+h1,
+h2 {
+  color: cyan;
+  font-family: 'Girassol', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  color: #00BFFF;
+}
+body {
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('../Images/Matrix.jpg');
+  background-size: 100%;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+header h1,
+header h2 {
+  padding: 2% 0;
+}
+header nav {
+  padding: 2% 0;
+}
+header nav a {
+  padding: 0 3%;
+  text-decoration: none;
+  border-left: 3px solid cyan;
+}
+header nav a:hover {
+  color: white;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  header nav a {
+    padding: 2% 0;
+    border: none;
+  }
+}
+.page {
+  display: flex;
+  justify-content: center;
+  line-height: 1.25;
+}
+.page .one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.page .two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .page .one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .page .two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5% 0;
+}
+footer a:hover {
+  color: white;
+}
